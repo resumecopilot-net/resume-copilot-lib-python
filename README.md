@@ -43,22 +43,6 @@ for job in results.jobs:
     print(f"Job: {job.name} at {job.company_name}")
 ```
 
-## Advanced Usage
-You can specify additional parameters for more refined job searches:
-```python
-request = JobSearchRequest(
-    title="python developer",
-    company_name="Google",
-    city="San Francisco",
-    state="CA",
-    country="USA",
-    is_remote=True,
-    size=5
-)
-
-results = JobSearchHelper.search_jobs(request)
-```
-
 ## Contributing
 We welcome contributions! Feel free to open issues or submit pull requests to improve the library.
 
